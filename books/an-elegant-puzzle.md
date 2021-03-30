@@ -89,7 +89,7 @@ An Elegant Puzzle: Systems of Engineering Management by Will Larson
 
 #### 3.7.2 Project head count a year out
 
-#### 3.7.3 Manager0to0engineer ratio
+#### 3.7.3 Manager-to-engineer ratio
 
 #### 3.7.4 Defining teams and groups
 
@@ -117,7 +117,7 @@ An Elegant Puzzle: Systems of Engineering Management by Will Larson
 
 ### 3.12 Scaling consistency: designing centralized decision-making groups
 
-#### 3.12.1 Positive and negative frreedoms
+#### 3.12.1 Positive and negative freedoms
 
 #### 3.12.2 Group design
 
@@ -131,11 +131,160 @@ An Elegant Puzzle: Systems of Engineering Management by Will Larson
 
 ## Chapter 4: Approaches
 
+### 4.1 Work the policy, not the exceptions
 
+#### 4.1.1 Good policy is opinionated
 
+#### 4.1.2 Exception debt
 
+#### 4.1.3 Work the policy
 
+### 4.2 Saying no
 
+#### 4.2.1 Constraints
 
+#### 4.2.2 Velocity
 
+#### 4.2.3 Priorities
 
+#### 4.2.4 Relationships
+
+### 4.3 Your philosophy of management
+
+#### 4.3.1 An ethical profession
+
+#### 4.3.2 Strong relationships > any problem
+
+#### 4.3.3 People over process
+
+#### 4.3.4 Do the hard thing now
+
+#### 4.3.5 Your company, your team, yourself
+
+#### 4.3.6 Think for yourself
+
+### 4.4 Managing in the growth plates
+
+#### 4.4.1 In the growth plates
+
+#### 4.4.2 Outside the growth plates
+
+#### 4.4.3 Aligning with values
+
+### 4.5 Ways engineering managers get stuck
+
+### 4.6 Partnering with your manager
+
+### 4.7 Finding managerial scope
+
+### 4.8 Setting organizational direction
+
+#### 4.8.1 Scarce feedback, vague direction
+
+#### 4.8.2 Mining for direction
+
+### 4.9 Close out, solve, or delegate
+
+## Chapter 5: Culture
+
+### 5.1 Opportunity and membership
+
+#### 5.1.1 Opportunity
+
+#### 5.1.2 Membership
+
+#### 5.1.3 Keep going
+
+### 5.2 Select project leads
+
+### 5.3 Make your peers your first team
+
+### 5.4 Consider the team you have for senior positions
+
+### 5.5 Company culture and managing freedoms
+
+### 5.6 Kill your heroes, stop doing it harder
+
+#### 5.6.1 The fall and rise of a hero
+
+#### 5.6.2 Kill the hero programmer
+
+#### 5.6.3 A long time coming, a long time going
+
+#### 5.6.4 Resetting broken systems
+
+## Chapter 6: Careers
+
+### 6.1 Roles over rocket ships, and why hypergrowth is a weak predictor of personal growth
+
+#### 6.1.1 Your new career narrative
+
+#### 6.1.2 Opportunities for growth
+
+### 6.2 Running a humane interview process
+
+#### 6.2.1 Be kind
+
+#### 6.2.2 What role is this, anyway?
+
+#### 6.2.3 Finding signal
+
+#### 6.2.4 Be prepared
+
+#### 6.2.5 Deliberately express interest
+
+#### 6.2.6 Feedback loops
+
+#### 6.2.7 Optimize the funnel
+
+### 6.3 Cold sourcing: hire someone you don't know
+
+#### 6.3.1 Moving beyond your personal networks
+
+#### 6.3.2 Your first cold sourcing recipe
+
+#### 6.3.3 Is this high-leverage work?
+
+### 6.4 Hiring Funnel
+
+#### 6.4.1 Funnel fundamentals
+
+#### 6.4.2 Instrument and optimize
+
+#### 6.4.3 Extending the funnel
+
+### 6.5 Performance management systems
+
+#### 6.5.1 Career ladders
+
+#### 6.5.2 Performance designations
+
+#### 6.5.3 Performance cycles
+
+### 6.6 Career levels, designation momentum, level splits, etc.
+
+### 6.7 Creating specialized roles, like SRE or TPM
+
+#### 6.7.1 Challenges
+
+#### 6.7.2 Facilitating success
+
+#### 6.7.3 Advantages
+
+#### 6.7.4 What to do?
+
+### 6.8 Designing an interview loop
+
+## Chapter 7: Appendix
+
+### 7.1 Tools for operating a growing organization
+
+#### 7.1.1 Line management
+
+#### 7.1.2 Middle management
+
+#### 7.1.3 Managing an organization
+
+### 7.2 Books I've found very useful
+
+### 7.3 Papers I've found very useful
