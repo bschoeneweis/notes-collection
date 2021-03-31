@@ -241,32 +241,279 @@ Write a plan to close all the easy gaps, and then 1-2 of the riskiest gaps.
 Not a one-time tool, but should be a good base to run through this once a year.
 
 ## Chapter 3: Tools
+This chapter provides various tools for managing change for an abstract chair of guiding and for serving as glue during transition periods.
 
 ### 3.1 Introduction to systems thinking
+Product management skillset is effective for identifying problems, but systems thinking is the most universally effective.
 
 #### 3.1.1 Stocks and flows
+Links between events are more subtle than they appear.
+
+*Stocks*: Accumulation of small changes, or the memory of changes over time.
+
+*Flows*: Changes to stocks. Can be *inflows* or *outflows*
+- Example of an *inflow*: training a new manager.
+- Example of an *outflow*: a trained manage who departs the company.
+
+*Information link*: Indicates that the value of a stock is a factor in the size of the flow.
+- E.G. time available for developing features depends on # of trained managers.
+
+A few notes:
+- *Stocks* outside of a diagram's scope are clouds
+- Every flow should be labeled
+- Flows are rates
+- Stocks are quantities
 
 #### 3.1.2 Developer velocity
+*The Science of Lean Software and DevOp* has four measurers of dev velocity:
+
+ 1. Delivery lead time
+	 - Time from creation of code to deployment in production
+ 2. Deployment frequency
+	 - How often code is deployed
+ 3. Change fail rate
+	 - How frequently changes fail
+ 4. Time to restore service
+	 - The amount of time spent recovering from defects
+
+These modeled as a system to measure dev productivity:
+
+1. Code review rate
+	- Pull Requests are converted into Ready Commits based on code review rate
+2. Deploy rate
+	- Ready Commits converted to Deployed Commits
+3. Defect rate
+	- Deployed Commits converted into Incidents
+4. Recovery rate
+	- Incidents remediated into Reverted Commits
+5. Debug rate
+	- Revert Commits debugged into new Pull Requests
+
+This creates a feedback loop.  The downstream behavior effects the upstream.
+
+Finding where to invest isn't one size fits all.
+- E.G. If there isn't a backlog of ready commits, speeding up the deploy rate won't be valuable
 
 #### 3.1.3 Model away
+Any difficult problem is worth trying to represent as a system.
+
+Check out Stella (expensive) or Insight Maker.
 
 ### 3.2 Product management: exploration, selection, validation
+Good to separate engineering and product leadership.
+
+Product management is an iterative elimination tournament with rounds of:
+1. Problem Discovery
+	- Uncovering possible problems to work on
+2. Problem Selection
+	- Filtering those problems down to a subset
+3. Solution Validation
+	- Ensuring your approach to solving these problems works as cheaply as possible
+4. Execution
+	- Not a phase, just loops back to Problem Discovery
+
+This obviously isn't all that needed to be a PM, but it's a good starting place.
 
 #### 3.2.1 Problem discovery
+This is often skipped, but taking time to evaluate which problems to solve is a great predictor of a team's long-term performance.
+
+Common themes that generate problems:
+- Users' pain
+	- Problems the user experiences
+- Users' purpose
+	- What motivates users to engage?
+- Benchmark
+	- How does you company compare to competitors?
+		- Specifically, where are you weaker?
+- Cohorts
+	- Explore your data for cohorts hidden behind top-level analysis to find new kinds of users with different/surprising needs
+- Competitive advantages
+	- Knowing where you strong can open new doors that you can fill compared to other companies
+- Competitive moats
+	- Sustaining competitive advantage that makes it possible to pursue offerings others cannot.
+	- 1) What do your existing moats enable you to do today?
+	- 2) What are the potential moats you could build for the future?
+	- 3) What moats do your competitors have?
+- Compound leveraging
+	- What could you build today that would compound into major product/technical leverage?
+	- Work to get the benefit twice
+		- Design example: Introducing a navigation scheme that supports an expanded set of actions today and will support future additions
+		- Infra example: Moving from a failing piece of tech to a new standard (addresses reliability, lowers maintenance cost, reduces cost of future migrations)
 
 #### 3.2.2 Problem selection
+- Surviving the round
+	- What do you need to do to survive the current round?
+- Surviving the next round
+	- Where do you need to be when the next round comes along to avoid getting eliminated?
+- Winning rounds
+	- It's important to survive, but also to win
+- Consider different time frames
+	- What would you do if you were out of money in six months?
+	- What if there were no external factors forcing results until two years out?   Five years?
+- Industry trends
+	- Where is the industry moving and how will you take advantage of those trends/avoid rework?
+- Return on investment
+	- Take a look at cost and potential return
+	- Don't overlook small and easy wins
+- Experiments to learn
+	- What can you learn now to make problem selection easier in the future?
 
 #### 3.2.3 Solution validation
+Worth it to have an explicit solution validation phase to make sure the approach is correct and worth it.
+
+- Write a customer letter
+	- Write the launch announcement, are you able to write something exciting, useful, and real?
+- Identify prior art
+	- How do peers in the industry approach this?
+		- Doesn't mean it's the best way, but means it's possible
+		- Take with a grain of salt depending on the source
+- Find reference users
+	- Can you find guinea pigs fo the solution?  If not, might need to be skeptical and go back to the drawing board
+- Prefer experimentation over analysis
+	- Analysis can uncover missing info, but experimentation allows you to find problems you didn't anticipate
+- Find the path more quickly traveled
+	- Most expensive way to validate is to build out entirely
+- Justify switching costs
+	- Cost of users switching?
+
+Most aspects of running a successful technology migration overlap with good solution validation.
 
 ### 3.3 Visions and strategies
 
+As an organization grows beyond 50 people, organizational alignment can be difficult.
+
+Understanding each instance of each team isn't scalable.
+
+Operating reviews for metrics and major projects was helpful, but was better for learning and fine-tuning versus broad alignment.
+
+Strategy and vision proved to be the most effective tool for alignment at scale.
+
 #### 3.3.1 Strategies and visions
+*Strategies*: Grounded documents that explain trade-offs and actions that will be taken to address a specific challenge.
+
+*Visions*: Aspirational documents that enable individuals who don't always work closely together to make decisions that fit together cleanly.
+
+|  | Strategy | Vision |
+|--|--|--|
+| Purpose | Approach to a specific challenge | A gentle, aligning pressure |
+| Character | Practical | Aspirational |
+| Time Frame | Variable | Long-Term |
+| Specificity | Accurate, detailed | Illustrative, directional |
+| Quantity | As many as useful | As few as possible |
 
 #### 3.3.2 Strategy
+Recommends specific actions that address a given challenge's constraints.
+
+A good structure is the following:
+1. Diagnosis
+	- Describes the challenge at hand
+	- A very thorough problem statement
+	- Before you finish reading, you'll often have several good approaches
+	- E.G. "I am too busy to think about long-term goals. I attend 35 hours of meeting each week. I am under pressure to immediately increase team performance. I believe that if I stop doing my current meetings, short-term team performance will decrease. I am concerned if my short-term team performance decreases, I may lose face as an effective leader, which will undermine my career opportunities. I believe that if I don't think about long-term goals, our performance will never improve, which will also undermine my career opportunities."
+2. Policies
+	- Identify how you will approach this problem and often the trade-offs between two competing goals.
+	- For the example above, you may allow short-term performance to dip to benefit long-term performance.
+	- Bad policy results in "So what?"'s
+		- This policy likely entrenches the status quo
+	- Good policy results in "Oh that will annoy so and so..."
+		- This policy takes a clear stance on competing goals
+3. Actions
+	- When you apply the policies to the diagnosis
+	- Good actions usually cause a reaction like "This is going to be uncomfortable, but I think it can work"
+	- For the example above, action could be to "stop attending weekly team meetings to free up time and move to a monthly metrics review with blocked out focus hours"
+
+Be honest about constraints that make the challenge tough (usually a people or organizational aspect).
 
 #### 3.3.3 Vision
+Describe a future in which trade-offs are no longer mutually exclusive.
+
+Helps individuals think beyond the local maxima without tightly centralized coordination.
+
+A good vision has the following:
+1. Vision statement
+	- 1-2 sentence aspiration statement to serve as a summary
+	- This will be repeated often and is a core speaking point
+	- Don't need to capture every detail, but needs to be memorable enough to evoke the vision
+2. Value proposition
+	- How will you be valuable to users and the company?
+	- What successes can be achieved?
+	- Starting from users leads to visions that are more ambitious and grounded
+3. Capabilities
+	- What capabilities will the product, platform, and team need to deliver on the value proposition?
+4. Solved constraints
+	- What are you limited by today, but won't be in the future?
+5. Future constraints
+	- What constraints will come in the future?  Hopefully easy to adjust like funding/hiring
+6. Reference materials
+	- Link all plans, metrics, updates, references, and documents into an appendix
+	- Allows complexity without losing context
+7. Narrative
+	- Synthesize all of these details into a ~1 page easy to digest summary
+	- In the final, this is probably second to the vision statement
+
+*A few additional tips*:
+- Test the document
+	- This is a core leadership tool.  Iterate.
+	- Get feedback, address conflict in the feedback
+- Refresh periodically
+	- Refresh once a year
+	- If it's outdated, restart
+- Use present tense
+- Write simply
+	- Lost the buzzwords
+
+You should have one vision for each complete, distinct area, but no more.
+
+Having two clear visions that overlap areas is worse than zero.
+
+Useful when:
+- Team is struggling to align with stakeholders
+- You're struggling to lead a cohesive organization
 
 ### 3.4 Metrics and baselines
+Planning goes from specific projects into goals.
+
+Goals decouple the "what" from the "how".
+
+*Defining Goals*
+- Bad goals are basically numbers
+	- E.G. "Our p50 build time will be below two seconds"
+	- E.G. "We'll finish eight large projects"
+	- Aren't sure if these are ambitious or if they even matter
+- Good goals have four specific kinds of numbers
+	1. A **target** you want to reach
+	2. A **baseline** where you are today
+	3. A **trend** describing current velocity
+	4. A **time frame** to set bounds for the change
+
+	- E.G. "In Q3, we will reduce time to render our frontpage from 600ms (p95) to 300ms (p95).  In Q2, render time increased from 500ms to 600ms."
+- Tests of an effective goals
+	- Someone who doesn't know much about an area can get a feel for the difficulty
+	- They can also evaluate if the goal was achieved
+
+*Investments and baselines*
+These are two types of goals.
+
+*Investments*: Describe a future state you want to reach
+
+*Baselines*: Describe aspects of the present you want to preserve
+- Help to narrow the solution space to accomplish investment goals
+- Typically about preserving a current property
+
+Pair investment goals with baseline metrics (also called *countervailing metrics*).
+
+Example:
+- Efficiency of running batch jobs shouldn't exceed current price of $0.05 per GB
+- Batch jobs should not increase alert load on teams, which is currently alerting 2x per week
+
+*Plans and contracts*
+Goals are useful for planning.
+
+Specify as few investment goals as possible (maybe 3), and that should be the focus of planning.
+
+*Acronyms mentioned*
+- *SLO*: Service level object
+- *OKR*: Objectives and key results
 
 ### 3.5 Guiding broad organization change with metrics
 
