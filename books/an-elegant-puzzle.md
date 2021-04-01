@@ -516,36 +516,268 @@ Specify as few investment goals as possible (maybe 3), and that should be the fo
 - *OKR*: Objectives and key results
 
 ### 3.5 Guiding broad organization change with metrics
+Very effective to lead organizational change if you don't necessarily have authority.
+
+*Approach*
+1. Explore
+	- Get data into an explorable formate
+	- Look through it and get a feel for it
+	- Identify the levers of change
+		- E.G. Batch pipeline is majority of your cost
+2. Dive
+	- Once 3-4 issues are identified, dive deep on those areas
+	- E.G. Batch jobs could be based on # of jobs, total data stored, new development, or by expensive jobs
+3. Attribute
+	- Find the true source of the cost metric, may be for a team that supports the team you initially thought
+4. Contextualize
+	- Build context around teams performance
+	- E.G. It's one thing to know they spend $100,000 / month, but another to know they spend that and are the second-highest spender of 47 teams
+	- Benchmarking is powerful
+		- Benchmark into cohorts (front=end, back-end, and infra teams) because cost is different
+5. Nudge
+	- Dashboards can be helpful
+	- Push notifications (email) can be even better for metrics that have shifted
+	- Basically notify when behavior shifts
+6. Baseline
+	- Key teams should agree on baseline metrics
+7. Review
+	- Running a monthly or quarterly review for teams
+	- Typically requires and executive sponsor
 
 ### 3.6 Migrations: the sole scalable fix to tech debt
+Most interesting migration was Uber's migration from Puppet-managed services to self-service provisioning model to spin up services in a matter of clicks.
+
+Migrations are essential and frustratingly frequent as codebases and businesses evolve.
+
+Most processes/tools only support one order of magnitude.
+
+If something requires a migration at increased scale, it's likely a sign that you build it properly instead of being over-designed.
 
 #### 3.6.1 Why migrations matter
+Usually the only available way to make meaningful progress on technical debt.
+
+Each migration aims to create technical leverage or reduce tech debt.
+
+Googler's phrase: "Running to stand still" for teams whose capacity is spent upgrading dependencies and patterns.
+
+Migrations are healthy, if you don't do them when needed, it'll probably read to a full rewrite.
 
 #### 3.6.2 Running good migrations
+*Playbook for migrations*
+1. De-risk
+	- Do so quickly and cheaply
+	- Write a design document, show teams who will have a tough time, iterate, test against roadmap, iterate
+	- Start with the most challenging migrations
+2. Enable
+	- Slow down, build tools to handle the easy 90%
+	- Figure out self-service tooling and documentation
+	- **Best migration tools are incremental and reversible**
+3. Finish
+	- Last phase is deprecating the legacy system
+		-	This requires 100% adoptions
+	- Stop the bleeding, have all new code use the new approach
+	- Generate tracking tickets and push migration statuses to teams that need to migrate
+	- Finish it yourself, get into the nooks and crannies
+	- Recognition should be reserved for their successful completion
 
 ### 3.7 Running an engineering reorg
+For quickly growing companies, here are two skills that have a disproportionate impact on organizational success:
+1. Making technical migrations cheap
+2. Running clean reorganizations
+
+
+*Framework for (re)designing an engineering organization (more of a thinking tool than recipe)*
+1. Validate that organizational change is the right tool
+2. Project headcount a year out
+3. Set target ration of management to individual contributors
+4. Identify logical teams and groups of teams
+5. Plan staffing for these teams and groups
+6. Commit to moving forward
+7. Roll out the change
 
 #### 3.7.1 Is a reorg the right tool?
+*Two best kinds of reorganizations*
+1. The one that solves a structural problem
+2. The one that you don't do
+
+*The worst kind*
+1. The one you do because you're avoiding a people management issue
+
+*Checklist to see if reorganization is the right tool*
+1. Is the problem structural?
+	- Reorgs can increase communication, reduce decision friction, and focus attention
+	- If not one of these, consider something else
+2. Are you reorganizing to work around a broken relationship?
+	- Karma always comes do with management
+	- Better off addressing the issue than working around it
+3. Does the problem already exist?
+	- Wait until it exists to solve it
+	- Hard to predict future problems, and even if you do, you may hit a different problem first
+4. Are conditions temporary?
+	- Are you in a crunch period or a unique period?
+		- If so, it might be best to just continue on and rethink afterwards
 
 #### 3.7.2 Project head count a year out
+*Ways to reason to this number*
+1. Optimistic number based on what's barely possible
+2. Based on the "natural size" of your organization if every position was fully staffed
+3. Realistic number based on historical hiring rates
+
+Merge these into a single number.  Historical trends should hold the most weight.
 
 #### 3.7.3 Manager-to-engineer ratio
+If manager is expected to do hands-on technical work, their teams should be 3-5 engineers (unless it already exists).
+
+If not, then 5-8 engineers depending on experience is typical.
+
+If you're targeting more, then you should ask why.
+
+6-8 is a usual target.
 
 #### 3.7.4 Defining teams and groups
+Example with 35 engineers and 7 engineers per manager.
+
+35/7 = 5 managers
+Log7(35) ~= 1.8 managers of managers
+
+Orgs should generally round up.
+
+35 engineers should probably be 1-3 groups with 5-6 teams.
+
+*Additional considerations*
+1. Can you write a mission statement for each team?
+2. Would you personally be excited to be a member of each team, and to be a manager of each team?
+3. Put teams that work together (especially poorly) as close as possible.
+	- This minimizes distance of escalations with disagreements
+	- Poor working relationships are the by-product of information gaps
+4. Can you define clear interfaces for each team?
+5. Can you list areas of ownership for each team?
+6. Have you created a gap-less map of ownership so each responsibility is owner by a team
+	- Try to avoid a implicitly creating holes
+7. Are there compelling candidate pitches for each team?
+8. Are you over-optimizing on individuals versus establishing a sensible structure?
 
 #### 3.7.5 Staffing the teams and groups
+*Sources of candidates*
+1. Team members who are ready to fill the roles now
+2. Team members who can grow into the roles within the time frame
+3. Internal transfers from within your company
+4. External hires who have the skills already
+
+Keep a spreadsheet and go in this order.
+
+Missing someone is the cardinal sin of reorganization
 
 #### 3.7.6 Commit to moving forward
+*Questions to ask*
+1. Are the changes meaningful net positive?
+2. Will the new structure last for at least six months?
+3. What problems did you discover during redesign?
+4. What will trigger the reorg after this one?
+5. Who is going to be impacted most?
 
 #### 3.7.7 Roll out the change
+*Key elements to a rollout*
+1. Explanation of reasoning driving the reorganization
+2. Documentation of how each person and team will be impacted
+3. Availability and empath to help bleed off frustration from the individuals who are impacted
+
+*Tactics for doing the above elements*
+1. Discuss with heavily impacted individuals in private first
+2. Ensure managers and other key individuals are prepared to explain the reasoning of the changes
+3. Send out an email documenting the changes
+4. Be available for discussion
+5. If necessary, hold an org all-hands, but try not to
+	- People don't process well in large groups
+	- Best discussion is in small rooms
+6. Double down on doing skip-level one-on-ones
+
+*Closing thoughts*
+An organization is:
+1. A collection of people
+2. A manifestation of an idea separate form the individuals comprising it 
 
 ### 3.8 Identify your controls
+When transitioning from directly supporting teams to partnering with managers, this helps to remain effective without understanding day-to-day tasks.
+
+This helps to know where to engage and where to hang back to avoid micromanaging.
+
+*Common controls*
+- Metrics
+	- Align on outcomes, but leave how they're achieved as flexible
+- Visions
+	- Ensure you agree on long-term visions, keep short-term flexibility
+- Strategies
+	- Make sure you have a shared understanding of constraints and how to address them
+- Organization design
+	- Allows you to coordinate the evolution of a wider organization within the context of sub-organizations
+- Head count and transfers
+	- Ultimate form of prioritization
+	- Good forum for validating how organizational priorities align on individual teams
+- Roadmaps
+	- Align on problem selection and solution validation
+- Performance reviews
+	- Coordinate culture and recognition
+
+*Agree on degree of alignment for each one, here are the levels*
+- I'll do it
+	- Stuff I will do
+	- Be explicit to avoid redoing work
+	- Use this sparingly
+- Preview
+	- Be involved early and often
+	- May not be on the same page at the beginning
+	- This helps to avoid rework
+- Review
+	- Weigh in before it gets published or rolled out
+	- This usually means you're already pretty aligned
+- Notes
+	- Projects you'd like to follow on, but don't have much to add in
+	- Want to be able to represent colleagues work correctly
+- No surprises
+	- Work is currently aligned, but requires updates to keep mental model in tact
+	- If asked about related problem, want to be able to answer correctly
+	- This one is important
+- Let me know
+	- We're well aligned and confident you can deliver
+	- Let me know if something comes up where I can help
+
+If you can't imagine a world where you don't preview everyone's work, it's probably time to reflect on what's holding you back from letting the team thrive.
 
 ### 3.9 Career narratives
+Peculiar challenge is investing in someone's career development when they're unsure on their own goals.
+
+Also hard to plan your own career.
+
+*Career narrative*: Intersection between the individual's and their manager's perspective
 
 #### 3.9.1 Artificial competition
+Much more opportunities on career ladders than off of them.
+
+Let's say you want to be head of engineering at a mid size company. There is probably only one person at that company that will achieve that and everyone else is likely pursuing that path as well.
+
+Another approach is to identify the gaps that would keep you from being a strong head of engineering, and then starting to use your current role to fill those gaps.
+
+Head of engineering will be skilled at organizational design, process design, business strategy, recruiting, mentoring, coaching, public speaking, and written communication. They also have a broad personal network, and a broad foundation from everything from project engineering to infrastructure engineering.  This isn't even a complete list.
+
+**There is no need to convince yourself that your current role is holding you back -- everything you need is here.** These skills can be practiced now.
+
+An important part of setting goals is developing areas you're less experienced in to maximize global success. It's equally important to succeed locally in your current environment by prioritizing what you do well.
+
+*Action steps*
+1. Write up as many goals as you can for what you want to accomplish in the next one to five years
+2. Prioritize this list
+3. Pick a few that you want to focus on in the next 3-6 months
+4. Share with your manager
 
 #### 3.9.2 Translating goals
+Now, we need to translate these goals to actions.  This is where your manager can be helpful.
+
+Manager's have a strong sense of the business needs and can intersect those needs with your interests and goals.
+
+A refined list of goals, aligned with company priorities, becomes a central artifact for collaborating with your manager on career evolution.
+
+Refresh it every quarter or so.
 
 ### 3.10 The briefest of media trainings
 
