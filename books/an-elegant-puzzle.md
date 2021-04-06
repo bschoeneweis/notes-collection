@@ -780,12 +780,58 @@ A refined list of goals, aligned with company priorities, becomes a central arti
 Refresh it every quarter or so.
 
 ### 3.10 The briefest of media trainings
+*Three rules*
+1. Answer the question you want to be asked
+	- Reframe difficult questions into one that you're comfortable answering
+2. Stay positive
+	- Find positive framing and stick to it
+3. Speak in threes
+	- Stick to three concise points
 
 ### 3.11 Model, document, and share
+A good way to grow as a leader is to develop a range of styles and apply them to various circumstances, don't just apply one style.
+
+One tricky and common leadership scenario is leading without authority.
+
+This is called **Model, Document, Share**
 
 #### 3.11.1 How it works
+Hard to have personal credibility right off the back (even if hired on experience). This example is about recommending Kanban.
+
+*Model*
+- Measure team's health (surveys) and throughput (lightweight task sizing) to establish a baseline
+- Just start using Kanban, don't make a big deal. Frame as an experiment.
+- Keep iterating and improving until it's refined and test against the baseline to see if it's helping
+
+*Document*
+- After an effective approach is found:
+	- Document the problem
+	- The learning process you went through
+	- The details on how another team could adopt the practice
+- Be detailed and receive feedback
+
+*Share*
+- Share your documented approach and experience doing the rollout
+- Don't ask everyone to adopt the change or lobby for change, just present the approach and your experience
 
 #### 3.11.2 Where it works
+*Top-down mandate assumes:*
+- It's better to adopt a good-enough approach quickly
+- Teams have the bandwidth to adopt a new approach
+- The organization has available resources to coordinate a rollout
+- You want to centralize decision-making on this topic
+- Consistency is important (all teams need the same approach)
+- Making this change quickly is important
+
+*Model, Document, Share assumes:*
+- It's better to adopt a great approach slowly
+- Some teams don't have the bandwidth to adopt a new approach
+- The organization may not have resources to coordinate a rollout
+- You want to decentralize decision-making on this topic
+- Teams have agency to adopt the appropriate practices for themselves
+- This change can be approached gradually
+
+Model, Document, Share may not always work, but it's an inexpensive failure most of the time.
 
 ### 3.12 Scaling consistency: designing centralized decision-making groups
 
