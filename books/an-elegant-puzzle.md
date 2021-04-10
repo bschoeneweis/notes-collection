@@ -834,12 +834,100 @@ Hard to have personal credibility right off the back (even if hired on experienc
 Model, Document, Share may not always work, but it's an inexpensive failure most of the time.
 
 ### 3.12 Scaling consistency: designing centralized decision-making groups
+As organizations grow, there is a subtle sliding to inconsistency.
+
+_Some solutions to this_
+- Formalized sprints
+- Training
+- Shadowing
+- Documentation
+- Linters
+- Process automation (especially deployment)
+- Incident reviews
+
+Most people reach for adding a centralized, accountable group.
+- Production reviews (standardize product decisions)
+- Architecture group (encourage consistent technical design)
+
+Some of these groups can become
+- Authoritative
+- Rigid gatekeepers
+- Advisory
 
 #### 3.12.1 Positive and negative freedoms
+_Positive freedom_ -  The freedom to do something
+- E.G. Pick a programming language for a project
+
+_Negative freedom_ - The freedom from things happening to you
+- E.G. Not to be obligated to support additional programming languages
 
 #### 3.12.2 Group design
+_Choices surrounding these groups_
+**Influence**
+- How will they influence results?
+	- Authoritative that makes binding decisions?
+	- Work through advocacy?
+- Answering these questions and member selection are important
+
+**Interface**
+- How will other teams interact with this team?
+	- Tickets, emails, weekly review sessions?
+- Reviewing work before it launches?
+- Previewing designs before work is started?
+
+**Size**
+- Six or fewer could become a true team focused on the team versus individual identities
+- 10+ will be tough to have discussions and should be broken down into subgroups
+
+**Time commitment**
+- How much time will members be working in this group?
+- What are their priorities?
+
+**Identity**
+- Should members view their role in this group as their primary identity?
+	- If so, this should be a small and highly committed team
+
+**Selection process**
+- How will you select numbers?
+	- Structured process works well
+		- Identify requirements to be a member
+		- Identify skills that will be valuable
+		- Allow people to apply
+	- Consistency is critical here because membership will often have perceptions of status
+
+**Length of term**
+- How long will people serve?
+	- Permanent?
+	- Fixed terms?
+		- Eligible for subsequent elections?
+- Best default is fixed terms and allowing current members to remain eligible without term limits
+
+**Representation**
+- How representative will this group be?
+	- Explicit selection on teams, tenure, seniority?
+	- Or clustered selection?
+- A good mix is important
 
 #### 3.12.3 Failure modes
+_Four ways these groups consistently fail_
+
+**Domineering**
+- Significantly reduce positive and negative freedoms
+- Churn factories for members
+- **A key cause of this is where decisions are abstracted from the consequence of the decision**
+	- E.G. Architecture groups where the members write little code
+
+**Bottlenecked**
+- Helpful, but try to do more than they actually do
+
+**Status-oriented**
+- More emphasis on being a member than on the groups actual purpose
+
+**Inert**
+- These groups don't do much of anything
+- Members are gelled or are too busy
+
+To avoid these, a manager should be in every centralized group and they're responsible for iterating on the format to avoid these pitfalls.
 
 ### 3.13 Presenting to senior leadership
 
