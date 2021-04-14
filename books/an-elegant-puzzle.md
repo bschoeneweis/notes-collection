@@ -1092,5 +1092,37 @@ To avoid these, a manager should be in every centralized group and they're respo
 #### 7.1.3 Managing an organization
 
 ### 7.2 Books I've found very useful
+1.  _Thinking in Systems: A Primer_ by Donella Meadows
+2. _Don't Think of an Elephant!: Know Your Values and Frame the Debate_ by George Lakoff
+3. _Peopleware: Productive Projects and Teams_ by Tom DeMarco & Timothy Lister
+4. _Slack: Getting Past Burnout, Busywork, and the Myth of Total Efficiency_ by Tom DeMarco
+5. _Mythical Man-Month, Essays on Software Engineering_ by Frederick Brooks Jr.
+6. _Good Strategy Bad Strategy: The Difference and Why it Matters_ by Richard Rumelt
+7. _The Goal: A Process of Ongoing Improvement_ by Eliyahu M. Goldratt
+8. _The Five Dysfunctions of a Team: A Leadership Fable_ by Patrick Lencioni
+9. _The Three Signs of a Miserable Job_ by Patrick Lencioni
+10. _Finite and Infinite Games_ by James Carse
+11. _Inspired: How to Create Tech Products Customers Love_ by Marty Cagan
+12. _The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail (Management of Innovation and Change)_ by Clayton M. Christensen
+13. _The E-Myth Revisited: Why Most Small Businesses Don't Work and What to Do About It_ by Michael E. Gerber
+14. _Fierce Conversations: Achieving Success at Work & in Life, One Conversation at a Time_ by Susan Craig Scott 
+15. _Becoming a Technical Leader: An Organic Problem-solving Approach_ by Gerald M. Weinberg
+16. _Designing with the Mind in Mind: Simple Guide to Understanding User Interface Design Guidelines_ by Jeff Johnson
+17. _The Leadership Pipeline: How to Build the Leadership Powered Company_ by Ram Charran, Steve Drotter, and Jim Noel
+18. _The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change_ by Camille Fournier
+19. _High Output Management_ by Andrew S. Grove
+20. _The First 90 Days: Proven Strategies for Getting Up to Speed Faster and Smarter_ by Michael D. Watkins
+21. _The Effective Executive: The Definitive Guide to Getting the Right Things Done_ by Peter F. Drucker
+22. _Don't Make Me Think: A Common Sense Approach to Web Usability_ by Steve Krug
+23. _The Deadline: A Novel About Project Management_ by Tom DeMarco
+24. _The Psychology of Computer Programming_ by Gerald M. Weinberg
+25. _Adrenaline Junkies and Template Zombies: Understanding Patterns of Project Behavior_ by Tom DeMarco, Peter Hruschka, Tim Lister, Steve McMenamin, James Robertson, Suzanna Robertson
+26. _The Secrets of Consulting: A Guide to Giving and Getting Advice Successfully_ by Gerald Weinberg
+27. _Death by Meeting: A Leadership Fable About Solving the Most Painful Problem in Business_ by Patrick Lencioni
+28. _The Advantage: Why Organizational Health Trumps Everything Else in Business_ by Patrick Lencioni
+29. _Rise: 3 Practical Steps for Advancing Your Career, Standing Out as a Leader, and Liking Your Life_ by Patty Azzerello
+30. _The Innovator's Solution: Creating and Sustaining Successful Growth_ by Clayton M. Christensen and Michael E. Raynor
+31. _The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win_ by Gene Kim, Kevin Behr, and George Spafford
+32. _Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations_ by Nicole Forsgren, Jez Humble, and Gene Kim
 
 ### 7.3 Papers I've found very useful
