@@ -930,6 +930,89 @@ _Four ways these groups consistently fail_
 To avoid these, a manager should be in every centralized group and they're responsible for iterating on the format to avoid these pitfalls.
 
 ### 3.13 Presenting to senior leadership
+Takes a while to master, and most people who do it well can't articulate how they do it.
+
+Most who are really good have distinct advantages that can't easily be replicated as well (e.g. charisma, quick wit, years of experience, etc.)
+
+_Tips_
+**Communication is company-specific**
+- Every company has different styles and patterns of communication
+- Watch and take notes for people who are good in your company and identify patterns
+
+** Start with the conclusion**
+- Especially with writing
+	- People skim and stop reading after they get bored
+- Start with what's important
+
+**Frame why the topic matters**
+- You're probably familiar with why this topic matters, but you're audience probably won't be
+- Explain why this matter to the company
+
+**Everyone loves a narrative**
+- Provide a narrative of (in a sentence or two):
+	- Where things are
+	- How you got here
+	- Where you're going now
+- Example: "Last year, we had trouble closing several important customers due to concerns about our scalability. We identified our databases as our constraints to scaling, and since then our focus has been moving to a new sharding model that enables horizontal scaling. That's going well, and we expect to finish in Q3".
+
+**Prepare for detours**
+- Be prepared to lead the entire presentation yourself
+- Also being equally ready for the discussion to derail towards Q&A
+
+**Answer directly**
+- Don't hide problems, use this as an opportunity to explain how you'll address them
+
+**Deep in the data**
+- You should know enough where you can answer unexpected questions
+- Run through goal-setting exercises to help explore the data
+
+**Derive actions from principles**
+- One goal is to provide a mental model of how you view the topic
+	- This allows people to get familiar with how you make decisions
+- Showing you're in the data is part of this
+- Define guiding principles you're using to approach decisions
+
+**Discuss the details**
+- Executives test presenters by diving into the details
+- You should be familiar with details
+	- Deadlines
+	- Statuses
+- If you're too in the details, then reframe the discussion
+	- Pop up to either the data or the principles
+
+**Prepare a lot; practice a little**
+- Practice presenting until you're comfortable, but diving into the data, details and principles is better time spent
+	- If you're knowledgeable, with experience you can prepare less
+
+**Make a clear ask**
+- If you don't go into a meeting with a clear goal, it'll go nowhere or go poorly
+- Explicitly frame a goal at the beginning
+
+_A loose presentation template_
+1. Tie topic to business value
+	- 1-2 sentences to answer the question "Why should anyone carer?"
+2. Establish historical narrative
+	- 2-4 sentences to help understand:
+		- How things are going
+		- How we got here
+		- Next planned step
+3. Explicit Ask
+	- 1-2 sentences, what are you looking for from the audience
+4. Data-driven diagnosis
+	- Explain the current constraints and context primarily through data
+	- Provide enough raw data to allow people to follow your analysis
+		- If you only provide analysis, you're asking people to trust you which can be evasive
+	- This should be a few paragraphs, up to a page
+5. Decision-making principles
+	- Explain the principles that you're applying against the diagnosis
+	- Articulate the mental model you use to make decisions
+6. What's next and when it'll be done
+	- Apply your principles to generate next steps
+	- It should be clear to readers how your action derive from your principles and the data
+		- Otherwise, rework your principles or actions
+7. Return to explicit ask
+	- Return to the ask
+	- Ensure you get the info or guidance that you need
 
 ### 3.14 Time management
 
